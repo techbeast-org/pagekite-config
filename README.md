@@ -11,7 +11,7 @@ once you installed, you can find all the pagekite config files under the directo
 /etc/pagekite.d
 ```
 
-you can use the sample frontend in this repo to kick start your setup !!
+you can use the sample frontend and backend in this repo to kick start your setup !!
 
 # To use self signed certificate
 
