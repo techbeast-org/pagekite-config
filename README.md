@@ -37,7 +37,7 @@ You can run your backends in any machine like windows, linux or mac, before that
 
 Your backend config file should be ~/.pagekite.rc under MacOS and linux, or C:\Users\your-username\pagekite.cfg under Windows
 
-Then, you can run your backend by below command to access your site xyz.your-domain.com
+Then, you can run your backend by below command to access your site via http(s)://xyz.your-domain.com
 
 
 ```
