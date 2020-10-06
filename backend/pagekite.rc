@@ -1,0 +1,7 @@
+kitename = your.domain.com
+kitesecret = ThisisaStrongPassword
+frontend = your.domain.com:443
+service_on= http:@kitename:localhost:3000:@kitesecret
+savefile = /home/ubuntu/.pagekite.rc
+max_read_bytes= 16256x3.100
+END
