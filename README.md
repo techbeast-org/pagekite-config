@@ -18,13 +18,11 @@ you can use the sample frontend in this repo to kick start your setup !!
 Login as as root user and Generate selsigned cert in your machine where you have installed pagekite using the below commands. Below commands will generate site-key.pem, site-cert.pem and frontend.pem( key+cert) under the directory /etc/pagekite.d, you can change the location if you want 
 
 ```
-sudo openssl req -new -x509 -keyout /etc/pagekite.d/site-key.pem \
+  openssl req -new -x509 -keyout /etc/pagekite.d/site-key.pem \
     -out /etc/pagekite.d/site-cert.pem -days 365 -nodes
-  cat /etc/pagekite.d/site-key.pem /etc/pagekite.d/site-cert.pem \
-    |tee /etc/pagekite.d/frontend.pem
 ```
 ```
-  sudo cat /etc/pagekite.d/site-key.pem /etc/pagekite.d/site-cert.pem > /etc/pagekite.d/frontend.pem
+  cat /etc/pagekite.d/site-key.pem /etc/pagekite.d/site-cert.pem > /etc/pagekite.d/frontend.pem
 ```
 
 Then, add the tls-endpoint in the 20_frontends.rc file including the path of your frontend.pem file for Pagekite
@@ -50,7 +48,10 @@ python pagekite.py
 
 If you use self-signed cert, your browser will warn you to accept the risk of the certificate. We suggest to use letsencrypt free SSL certificate to run your service.
 
+# Video Tutorial
 
+Check out 
+https://www.youtube.com/watch?v=ENjRzQkqEVA
 
 
 
